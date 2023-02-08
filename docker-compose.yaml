@@ -2,6 +2,8 @@ version: '3'
 services:
   student_service:
     image: devops/student_service
+    build:
+      dockerfile: ./Dockerfile
     restart: unless-stopped
     depends_on:
       - mongo
