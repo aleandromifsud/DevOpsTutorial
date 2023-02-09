@@ -94,6 +94,7 @@ components:
       required:
       - first_name
       - last_name
+      - student_id
       type: object
       properties:
         student_id:
@@ -111,8 +112,8 @@ components:
         last_name: last_name
         first_name: first_name
         gradeRecords:
-        - {}
-        - {}
+        - {grade: 9, subject_name: "DevOps"}
+        - {grade: 5, subject_name: "Software Process"}
     GradeRecord:
       required:
       - grade
