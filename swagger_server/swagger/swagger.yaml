@@ -94,7 +94,6 @@ components:
       required:
       - first_name
       - last_name
-#      - student_id
       type: object
       properties:
         student_id:

@@ -29,7 +29,7 @@ def add(student=None):
         new_student_id = new_student_id + 1
 
     student_obj = student.to_dict()
-    student_obj = student_obj["student_id": new_student_id]
+    student_obj["student_id"] = new_student_id
     studentCol.insert_one(student_obj)
     return new_student_id
 
