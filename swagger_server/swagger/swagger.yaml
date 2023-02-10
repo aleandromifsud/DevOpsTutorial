@@ -9,9 +9,6 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
 servers:
-# Added by API Auto Mocking Plugin
-- description: SwaggerHub API Auto Mocking
-  url: https://virtserver.swaggerhub.com/aleandromifsud/tutorial/1.0.0
 - url: https://virtserver.SwaggerHub.com/tutorial/1.0.0
   description: SwaggerHub API Auto Mocking
 paths:
@@ -108,8 +105,7 @@ components:
         gradeRecords:
           type: array
           items:
-            type: object
-#            $ref: '#/components/schemas/GradeRecord'
+            $ref: '#/components/schemas/GradeRecord'
       example:
         student_id: 0
         last_name: last_name
