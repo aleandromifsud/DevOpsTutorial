@@ -115,7 +115,7 @@ components:
         first_name: first_name
         gradeRecords:
         - {grade: 9, subject_name: "DevOps"}
-        - {grade: 5, subject_name: "Software Process"}
+        - {grade: 6, subject_name: "Software Process"}
     GradeRecord:
       required:
       - grade
