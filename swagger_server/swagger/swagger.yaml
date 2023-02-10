@@ -108,7 +108,8 @@ components:
         gradeRecords:
           type: array
           items:
-            $ref: '#/components/schemas/GradeRecord'
+            type: object
+#            $ref: '#/components/schemas/GradeRecord'
       example:
         student_id: 0
         last_name: last_name
