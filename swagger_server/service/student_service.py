@@ -36,12 +36,6 @@ def add(student=None):
 
 # Returns a student object based on the student_id
 # If the student_id is not found, 404 is returned
-# def get_by_id(student_id=None, subject=None):
-#     student = studentCol.find_one(dict(student_id=int(student_id)))
-#     if not student:
-#         return 'not found', 404
-#     student['_id'] = str(student['_id'])
-#     return student
 def get_by_id(student_id=None, subject=None):
     student = studentCol.find_one(dict(student_id=int(student_id)))
     if not student:
